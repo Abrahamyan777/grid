@@ -1,23 +1,50 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import Footer from './View/footer/footer';
+import SuccessModal from './View/footer/successModal/successModal';
+import Header from './View/header/header';
+import SingIn from './components/singIn/singIn';
+import ModalMenu from './components/modalMenu/modalMenu';
+import LoaderSpinner from './components/loader/loader';
+import Main from './View/main/main';
+import Layout from './View/layout/layout';
 
 function App() {
+
+  const [modalActiveM, setModalActivM] = useState(false);
+  const [activeSing, setActiveSing] = useState(false);
+
+  const [modalActive, setModalActiv] = useState(false);
+
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => {
+      setIsLoading(true)
+    }, 1500)
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {
+        !isLoading ? <LoaderSpinner /> :
+          <>
+            <ModalMenu active1={modalActiveM} setActive1={setModalActivM} />
+
+            <SuccessModal active={modalActive} setActive={setModalActiv} />
+            <SingIn activeSing={activeSing} setActiveSing={setActiveSing} />
+            <Header
+              active1={modalActiveM} setActive1={setModalActivM}
+              activeSing={activeSing} setActiveSing={setActiveSing}
+            />
+            <Layout />
+            {/* <Main /> */}
+          
+            <Footer active={modalActive} setActive={setModalActiv} />
+          </>
+      }
+
     </div>
   );
 }

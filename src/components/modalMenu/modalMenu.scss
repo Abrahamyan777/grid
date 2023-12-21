@@ -1,0 +1,53 @@
+.modal1{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 10;
+
+
+    .modal_contant{
+        width: 400px;
+        height: 100%;
+        background-color: rgb(60, 68, 100);
+        color: white;
+        padding: 20px;
+      
+        .modal_title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            svg{
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+    .modal-menu-list{
+        padding-top: 40px;
+        ul{
+            list-style: none;
+            li{
+                margin-top: 20px;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+.modal_contant{
+    transform: scale(0.2);
+    transition: 0.4s all; 
+}
+.modal_contant.act{
+    transform: scale(1);
+}
+.active{
+    opacity: 1;
+    pointer-events: all;
+}

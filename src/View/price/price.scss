@@ -1,0 +1,219 @@
+.price-wrapper {
+    padding: 74px 0 80px 0;
+
+    .price-title {
+        .price-title-1 {
+            color: #2D3436;
+            text-align: center;
+            font-family: Inter;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            letter-spacing: -1px;
+        }
+
+        .price-title-2 {
+            color: #ADADAD;
+            text-align: center;
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -0.5px;
+
+            span {
+                color: var(--Purple-Dark, #6C5CE7);
+                display: inline-block;
+                position: relative;
+
+                .borderBottom {
+                    position: absolute;
+                    width: 85%;
+                    height: 34%;
+                    top: 62%;
+                    z-index: -2;
+                    background-color: #FDCB6E;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+
+    .price-inner-blocks {
+        padding: 40px 0 80px 0;
+        display: flex;
+        gap: 27px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        .priceBlock {
+            width: 370px;
+            height: 536px;
+            padding: 32px;
+            position: relative;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 1px 2px #ccc, -1px -2px #ccc;
+            .fonposition {
+                width: 200px;
+                height: 126px;
+                background-image: url(../../images/fonWiggle.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                bottom: -10%;
+                left: -10%;
+                z-index: -5;
+            }
+
+            .student {
+                height: 32px;
+
+                span {
+                    color: #6C5CE7;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0.2px;
+                }
+            }
+
+            .individual {
+                color: #6C5CE7;
+                font-family: Inter;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 32px;
+                letter-spacing: 0.2px;
+                display: flex;
+                justify-content: space-between;
+
+                button {
+                    width: 90px;
+                    height: 32px;
+                    color: var(--Black, #2D3436);
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 2.5px;
+                    text-transform: uppercase;
+                    border-radius: 16px;
+                    border: 1px solid #ADADAD;
+                    background: none;
+                }
+            }
+
+            .price {
+                margin: 16px 0 24px 0;
+
+                .free {
+                    color: var(--Black, #2D3436);
+                    font-family: Inter;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 56px;
+                    letter-spacing: -1px;
+                    display: inline;
+                }
+
+
+                span {
+                    color: var(--Black, #2D3436);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 2.5px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .list-container {
+                ul {
+                    height: 286px;
+
+                    li {
+                        height: 40px;
+                        margin-bottom: 16px;
+                        display: flex;
+                        align-items: center;
+                        text-align: start;
+
+                        .leftSvg {
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 100%;
+                            background-color: #C2C2C2;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                        }
+
+                        .second-svg {
+                            background-color: #FDCB6E;
+                        }
+
+                        .thirdSvg {
+                            background-color: #55EFC4;
+                        }
+
+                        .text {
+                            text-align: center;
+                            color: var(--Black, #2D3436);
+                            font-family: Inter;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 32px;
+                            padding-left: 16px;
+                        }
+                    }
+                }
+            }
+
+            .btn-container {
+                button {
+                    width: 304px;
+                    height: 64px;
+                    border-radius: 16px;
+                    border: 1px solid #ADADAD;
+                    background: none;
+                    color: var(--Purple-Dark, #6C5CE7);
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: 0.2px;
+                }
+            }
+
+            .second-btn {
+                button {
+                    background-color: #6C5CE7;
+                    color: white;
+
+                }
+            }
+
+        }
+
+        .second-block {}
+
+        .third-block {}
+    }
+}
