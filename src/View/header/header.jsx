@@ -26,7 +26,7 @@ const Header = ({ activeSing, setActiveSing, active1, setActive1 }) => {
                 {
                     (screenWith > 1024) ? (
                         <>
-                        <NavLink to="/">
+                        <NavLink to="/grid/">
                             <div className='header-logo'>
                                 <div className='logo'>
                                     <LuLayout />
@@ -43,19 +43,19 @@ const Header = ({ activeSing, setActiveSing, active1, setActive1 }) => {
                                     </li>
                                     <div className='circle-orang'></div>
                                     <li>
-                                        <NavLink to="whoWeAre">
+                                        <NavLink to="/grid/whoWeAre">
                                             Who we are
                                         </NavLink>
                                     </li>
                                     <div className='circle-orang'></div>
                                     <li>
-                                        <NavLink to="whatWeDo">
+                                        <NavLink to="/grid/whatWeDo">
                                             What we do
                                         </NavLink>
                                     </li>
                                     <div className='circle-orang'></div>
                                     <li>
-                                        <NavLink to="contactUs">
+                                        <NavLink to="/grid/contactUs">
                                             Contact us
                                         </NavLink>
                                     </li>
