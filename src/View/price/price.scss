@@ -199,21 +199,15 @@
                     font-weight: 700;
                     line-height: 32px;
                     letter-spacing: 0.2px;
+                    &:hover{
+                        color: white;
+                        background-color: #6C5CE7;
+                    }
                 }
             }
 
-            .second-btn {
-                button {
-                    background-color: #6C5CE7;
-                    color: white;
-
-                }
-            }
+           
 
         }
-
-        .second-block {}
-
-        .third-block {}
     }
 }

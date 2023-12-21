@@ -3,7 +3,6 @@ import './singIn.scss'
 
 
 const SingIn = ({activeSing, setActiveSing}) => {
-    console.log(activeSing);
 
     return (
         <div className={activeSing ? 'singIn-wrapper active' : 'singIn-wrapper'} onClick={() => setActiveSing(false)}>

@@ -24,7 +24,7 @@ const Footer = ({ active, setActive }) => {
     return (
         <>
             <Container>
-                <div className="footer-wrapper">
+                <div className="footer-wrapper" >
                     <div className="left-footer">
                         <h6 className="title">follow us</h6>
                         <div className="icon-wrapper">

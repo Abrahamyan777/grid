@@ -7,11 +7,11 @@ import Contact from "../contact/contact";
 
 
 
-const Layout = () => {
+const Layout = ({footerRef}) => {
     return (
         <>
             <Routes>
-                <Route path='/grid/' element={<Main />} />
+                <Route path='/grid/' element={<Main footerRef={footerRef}/>} />
                 <Route path="/grid/whoWeAre/" element={<WhoWeAre />}  />
                 <Route path="/grid/whatWeDo/" element={<WhatWeDo />}  />
                 <Route path="/grid/contactUs/" element={<Contact />}  />

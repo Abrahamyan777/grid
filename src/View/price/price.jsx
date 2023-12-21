@@ -4,10 +4,10 @@ import { FaCheck } from "react-icons/fa";
 
 
 
-const Price = () => {
+const Price = ({footerRef}) => {
     return (
         <Container>
-            <div className="price-wrapper">
+            <div className="price-wrapper"  ref={footerRef}>
                 <div className="price-title">
                     <h2 className="price-title-1">Affordable pricing</h2>
                     <div className="price-title-2">Bill me &nbsp;

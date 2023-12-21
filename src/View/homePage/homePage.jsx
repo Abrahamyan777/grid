@@ -5,10 +5,11 @@ import svg from '../../images/homePage-fonSvg.svg'
 import icon from '../../images/Icon.png'
 import wap from '../../images/Wave.png'
 import { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 
-const HomePage = () => {
+const HomePage = ({ footerRef }) => {
     const [screenWith, setScreenWith] = useState(window.innerWidth)
 
     useEffect(() => {
@@ -20,6 +21,11 @@ const HomePage = () => {
             window.addEventListener("resize", changWidth)
         )
     }, [screenWith])
+
+    const handlClick = () => {
+        footerRef.current?.scrollIntoView({ behavior: "smooth" })
+    }
+
 
     return (
         <div className={(screenWith > 1024) ? "home-page-wrapper" : 'home-page-wrapper home-page-wrapper-back'}>
@@ -73,7 +79,7 @@ const HomePage = () => {
                     <div className='last-section'>
                         <p>This is multipurpose grid, it fits for portfolio, services or agency web site</p>
                     </div>
-                    <button className='bnt-section'>Learn more</button>
+                    <button className='bnt-section' onClick={() => handlClick()}>Learn more</button>
                 </div>
             </Container>
         </div>

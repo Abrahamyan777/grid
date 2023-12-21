@@ -3,12 +3,12 @@ import Info from "../info/info"
 import Price from "../price/price"
 
 
-const Main = () => {
+const Main = ({footerRef}) => {
     return (
         <>
-            <HomePage />
+            <HomePage  footerRef={footerRef}/>
             <Info />
-            <Price />
+            <Price footerRef={footerRef}/>
         </>
     )
 }

@@ -26,16 +26,16 @@ const Header = ({ activeSing, setActiveSing, active1, setActive1 }) => {
                 {
                     (screenWith > 1024) ? (
                         <>
-                        <NavLink to="/grid/">
-                            <div className='header-logo'>
-                                <div className='logo'>
-                                    <LuLayout />
+                            <NavLink to="/grid/">
+                                <div className='header-logo'>
+                                    <div className='logo'>
+                                        <LuLayout />
+                                    </div>
+                                    <div className='title-grid'>
+                                        <span>Grid</span>
+                                    </div>
                                 </div>
-                                <div className='title-grid'>
-                                    <span>Grid</span>
-                                </div>
-                            </div>
-                        </NavLink>
+                            </NavLink>
                             <nav className='header-menu'>
                                 <ul className='menu-list'>
                                     <li className='menu-list-title'>
@@ -73,8 +73,9 @@ const Header = ({ activeSing, setActiveSing, active1, setActive1 }) => {
                                         <FiMenu />
                                     </button>
                                 </div>
-                                <span>Grid</span>
-
+                                <NavLink to="/grid/">
+                                    <span>Grid</span>
+                                </NavLink>
                             </div>
                             <div className='menu-btn'>
                                 <button onClick={() => setActiveSing(!activeSing)}>Sign In</button>

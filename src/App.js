@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import Footer from './View/footer/footer';
 import SuccessModal from './View/footer/successModal/successModal';
@@ -24,6 +24,8 @@ function App() {
     }, 1500)
   }, [])
 
+  const footerRef = useRef();
+
   return (
     <div className="App">
 
@@ -38,10 +40,12 @@ function App() {
               active1={modalActiveM} setActive1={setModalActivM}
               activeSing={activeSing} setActiveSing={setActiveSing}
             />
-            <Layout />
+            <Layout footerRef={footerRef} />
             {/* <Main /> */}
-          
-            <Footer active={modalActive} setActive={setModalActiv} />
+
+            <Footer
+              
+              active={modalActive} setActive={setModalActiv} />
           </>
       }
 
